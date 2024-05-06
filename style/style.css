@@ -1,0 +1,323 @@
+nav {
+    background-color: RGB(58, 103, 24);
+    padding: 10px 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    padding: 10px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.nav {
+    margin-right: 15px;
+}
+
+.nav-item-ult {
+    margin-right: 100px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: inline-block;
+    list-style: none;
+    margin: 0px 0px 0px 5px;
+}
+
+.nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+#quemsomos {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.308)), url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quem-somos .titulo {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.quem-somos .sub_titulo {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.quem-somos .botoes {
+    margin-top: 30px;
+}
+
+.quem-somos .botoes button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quem-somos .botoes button.n-overlay {
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
+
+.quem-somos .botoes button.n-overlay:hover {
+    color: black;
+    background-color: white;
+}
+
+.quem-somos .botoes button.overlay {
+    background: white;
+    color: black;
+    animation: vibrar 0.5s ease-in-out infinite both;
+}
+
+.aboutus-section {
+    padding: 90px 0;
+}
+
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: RGB(58, 103, 24);
+}
+
+.aboutus-title::after {
+    background: RGB(58, 103, 24) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+.aboutus-more {
+    border: 2px solid RGB(58, 103, 24);
+    border-radius: 5px;
+    color: RGB(58, 103, 24);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.aboutus-more:hover {
+    border: 1px solid RGB(58, 103, 24);
+    background-color: RGB(58, 103, 24);
+    color: white;
+}
+
+.aboutus-banner {
+    text-align: center;
+}
+
+.faq {
+    background-color: #90a653;
+}
+
+.text-faq {
+    color: black;
+}
+
+.btn-faq {
+    background-color: RGB(58, 103, 24);
+    border: RGB(58, 103, 24) 2px solid;
+    color: white;
+}
+
+.btn-faq:hover {
+    background-color: #90a653;
+    border: white 1px solid;
+    color: white;
+}
+
+.btn-margin {
+    margin-right: 10px;
+}
+
+.btn-faq-div {
+    margin-top: 70px;
+}
+
+.section-contact {
+    padding: 100px 0;
+    position: relative;
+}
+
+.gray-bg {
+    background-color: white;
+}
+
+/* Contact Us
+---------------------*/
+.contact-name {
+    margin-bottom: 30px;
+}
+
+.contact-name h5 {
+    font-size: 22px;
+    color: RGB(58, 103, 24);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact-name p {
+    font-size: 18px;
+    margin: 0;
+    color: #606060;
+}
+
+.social-share a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    
+    text-align: center;
+    margin-right: 10px;
+}
+
+.contact-form .form-control {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    border-radius: 0;
+    padding-left: 0;
+    box-shadow: none !important;
+}
+
+.contact-form .form-control:focus {
+    border-bottom: 1px solid rgb(190, 240, 153);
+}
+
+.contact-form .form-control.invalid {
+    border-bottom: 1px solid #ff0000;
+}
+
+.contact-form .send {
+    margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+    .contact-form .send {
+        margin-bottom: 20px;
+    }
+}
+
+.section-title h2 {
+    font-weight: 700;
+    color: rgba(58, 103, 24);
+    font-size: 45px;
+    margin: 0 0 15px;
+    border-left: 5px solid rgb(190, 240, 153);
+    padding-left: 15px;
+}
+
+.section-title {
+    padding-bottom: 45px;
+}
+
+.contact-form .send {
+    margin-top: 20px;
+}
+
+.px-btn {
+    padding: 0 50px 0 20px;
+    line-height: 60px;
+    position: relative;
+    display: inline-block;
+    color: RGB(58, 103, 24);
+    background: none;
+    border: none;
+}
+
+.px-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid RGB(58, 103, 24);
+    border-right: 1px solid transparent;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    width: 60px;
+    height: 60px;
+}
+
+.px-btn .arrow {
+    width: 13px;
+    height: 2px;
+    background: currentColor;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25px;
+}
+
+.px-btn .arrow:after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: inline-block;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.footer{
+    background-color: #90a653;
+}

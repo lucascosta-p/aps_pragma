@@ -1,0 +1,168 @@
+*{
+    color: black;
+}
+
+nav {
+    background-color: RGB(58, 103, 24);
+    padding: 10px 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    padding: 10px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.nav {
+    margin-right: 15px;
+}
+
+.nav-item-ult {
+    margin-right: 100px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: inline-block;
+    list-style: none;
+    margin: 0px 0px 0px 5px;
+}
+
+.nav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+a{
+	color: #cc6060;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #519ac5fc;
+}
+
+.logo-wrapper{
+	text-transform: uppercase;
+	padding: 30px 0px;
+}
+
+.thumb{
+	width: 100%;
+}
+.main-news{
+	margin-top: 20px;
+}
+
+.main-news h3{
+	line-height: 0.75;
+}
+
+.main-news h3 a{
+	font-size: 17px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.image{
+	overflow: hidden;
+}
+
+.image-sm{
+	max-height: 180px;
+}
+
+.image-sm img{
+	height: 180px;
+}
+
+.image-xs{
+	max-height: 140px;
+}
+.image-xxs{
+	max-height: 100px;
+}
+
+.image img{
+	object-fit: cover;
+}
+
+.font-large{
+	font-size: 0.9em!important;
+	font-weight: 600!important;
+}
+
+.section-title{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.section-title span{
+	font-weight: 400;
+	font-size: 17px;
+	color: black;
+}
+
+.section-title span:after{
+	content: '';
+	position: absolute;
+	background: black;
+	width: 50px;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+}
+
+.bb-1{
+	padding: 20px 0px;
+	border-bottom: 1px solid #eee;
+}
+.section{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+}
+small{
+	color: #999;
+}
+.summary{
+	color: #777;
+}
+.trending .row{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #eee;
+}
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.no-pad{
+	padding-left: 0px!important;
+}
+
+
+.footer{
+    background-color: #90a653;
+    position: relative;
+}
+
+.news a{
+    color: black;
+}
+
+.news a:hover{
+    color: #90a653;
+    border-bottom: 0.5px solid #90a653;
+}
+
+.h1-news{
+    text-align: center;
+    padding-left: 30%;
+}
