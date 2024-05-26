@@ -484,13 +484,13 @@ body {
 }
 
 
-.btn-primary{
+.btn-primary-cont{
     color: white;
     background-color: #90a653;
     border: none;
 }
 
-.btn-primary:hover{
+.btn-primary-cont:hover{
     color: white;
     background-color: RGB(58, 103, 24);
     border: none;
@@ -500,4 +500,36 @@ body {
     color: red;
     font-size: 0.875em;
     margin-top: 5px;
+}
+
+.app-index{
+    background-color: #F8F8F8;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.app-index h2{
+    padding-left: 10px;
+    text-transform: uppercase;
+    color: #656F38;
+    border-left: 2px #656F38 solid;
+}
+
+.app-index p{
+    margin-top: 20px;
+    font-size: 1vw;
+    text-align: justify;
+}
+
+.app-index button{
+    background-color: #90a653;
+    padding: 15px 602px 15px 602px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.div-button{
+    margin-top: 40px;
 }

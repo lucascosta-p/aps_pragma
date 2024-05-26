@@ -1,4 +1,5 @@
-function validateForm() {
+function validateForm(event) {
+    event.preventDefault(); // Impede o envio do formulário
     let valid = true;
 
     // Limpar mensagens de erro
@@ -36,7 +37,7 @@ function validateForm() {
 
     if (valid) {
         alert('Sua mensagem foi enviada com sucesso!')
-        window.location.href = 'index.html';
+        window.location.href = 'https://lucascosta-p.github.io/aps_pragma/index.html';
     }
 
     return valid;
