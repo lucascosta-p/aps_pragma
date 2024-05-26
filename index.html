@@ -14,7 +14,8 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="index.html"><img src="images/logopragma.svg" alt="logo" width="150px" height="40px"></a>
+            <a class="logo" href="index.html"><img src="images/logopragma.svg" alt="logo" width="150px"
+                    height="40px"></a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -28,7 +29,7 @@
                 <li><a href="news.html">Newsletter</a></li>
                 <li><a href="app.html">Aplicativo</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
     <section id="quemsomos">
         <div class="container-fluid quem-somos">
@@ -271,37 +272,40 @@
             <div class="row flex-row-reverse">
                 <div class="col-md-7 col-lg-8 m-15px-tb">
                     <div class="contact-form">
-                        <form action="/" method="post" class="contactform contact_form" id="contact_form">
+                        <form action="/" method="post" class="contactform contact_form" id="contact_form" onsubmit="return validateForm()">
                             <div class="returnmessage valid-feedback p-15px-b"
-                                data-success="Your message has been received, We will contact you soon."></div>
+                                data-success="Sua mensagem foi recebida, entraremos em contato em breve."></div>
                             <div class="empty_notice invalid-feedback p-15px-b"><span>Preencha os campos
                                     obrigatórios</span></div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <input id="name" type="text" placeholder="Nome Completo" class="form-control">
+                                        <div id="nameError" class="error"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <input id="email" type="text" placeholder="Email" class="form-control">
+                                        <div id="emailError" class="error"></div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input id="subject" type="text" placeholder="Assunto" class="form-control">
+                                        <input id="assunto" type="text" placeholder="Assunto" class="form-control">
+                                        <div id="assuntoError" class="error"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <textarea id="message" placeholder="Mensagem" class="form-control"
                                             rows="3"></textarea>
+                                        <div id="messageError" class="error"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="send">
-                                        <a id="send_message" class="px-btn theme" href="#"><span>Entre em contato</span>
-                                            <i class="arrow"></i></a>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
                                     </div>
                                 </div>
                             </div>
@@ -334,8 +338,6 @@
         </div>
     </section>
     <footer class="footer">
-
-        <!-- Widgets - Bootstrap Brain Component -->
         <div class="py-3 py-md-5 py-xl-8 border-top border-light-subtle footer-1">
             <div class="container overflow-hidden footer-pad">
                 <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
@@ -350,16 +352,10 @@
                     <div class="col-xs-12 col-xl-6 order-2 order-xl-1">
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link link-secondary px-2 px-md-3" href="#!">Sobre</a>
+                                <a class="nav-link link-secondary px-2 px-md-3" href="quemsomos.html">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link link-secondary px-2 px-md-3" href="#!">Contato</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-secondary px-2 px-md-3" href="#!">Termos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link link-secondary px-2 px-md-3" href="#!">Privacidade</a>
+                                <a class="nav-link link-secondary px-2 px-md-3" href="#contato-id">Contato</a>
                             </li>
                         </ul>
                     </div>
@@ -414,6 +410,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/contato.js"></script>
 </body>
 
 </html>
